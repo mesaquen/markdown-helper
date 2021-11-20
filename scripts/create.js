@@ -17,7 +17,7 @@ const appName = path.basename(root)
 
 const templateDir = path.join(path.resolve(scriptRoot, '../template'))
 
-/*fs.copySync(templateDir, appName)
+fs.copySync(templateDir, appName)
 fs.moveSync(path.join(appName, 'gitignore'), path.join(appName, '.gitignore'))
 
 process.chdir(appName)
@@ -29,7 +29,7 @@ try {
     console.log('Created git commit')
 } catch(e) {
     console.warn('Git repo not initialized')
-}*/
+}
 
 function logCommand(command, description) {
     console.log(`  ${chalk.cyan(command)}`)
