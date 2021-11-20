@@ -1,0 +1,33 @@
+---
+documentclass: scrbook 
+
+classoption:
+  - oneside
+
+mainfont: TeX Gyre Termes
+sansfont: TeX Gyre Heros
+monofont: DejaVu Sans Mono
+fontsize: 12pt
+
+geometry:
+  - margin=2cm
+  - bottom=3cm
+
+papersize: a4
+
+colorlinks: true
+
+header-includes:
+  # Wrap words on code blocks
+  - \usepackage{fvextra} 
+  - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,numbers=left,commandchars=\\\{\}}
+  # Use bullet on all levels of unordered lists
+  - \usepackage{enumitem}
+  - \usepackage{amsfonts}
+  - \setlist[itemize]{label=$\bullet$}
+  - \usepackage{framed}
+  # Framed quotes
+  - \let\oldquote=\quote
+  - \let\endoldquote=\endquote
+  - \renewenvironment{quote}{\begin{framed}\oldquote}{\endoldquote\end{framed}}
+...

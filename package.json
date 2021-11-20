@@ -1,0 +1,24 @@
+{
+  "name": "markdown-helper",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "markdown-helper": "./bin/markdown-helper.js"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": ["markdown", "pandoc", "pdf", "odt"],
+  "author": "Mesaque Francisco",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.11.9"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cross-spawn": "^7.0.3",
+    "fs-extra": "^10.0.0"
+  }
+}
