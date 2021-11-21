@@ -7,9 +7,27 @@ const chalk = require('chalk')
 
 const script = process.argv[1]
 const scriptRoot = path.dirname(script)
+
 const args = process.argv.slice(2)
 
-const [name] = args
+const getName = (args) => {
+  const [name] = args
+
+  if (typeof name === 'undefined') {
+    const defaultName = 'markdown-project'
+
+    console.log('No name proivded. Using default name:')
+    console.log()
+    console.log(`  ${chalk.green(defaultName)}`)
+    console.log()
+
+    return defaultName
+  }
+
+  return name
+}
+
+const name = getName(args)
 
 const root = path.resolve(name)
 const appName = path.basename(root)

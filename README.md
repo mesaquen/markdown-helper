@@ -96,6 +96,6 @@ Feel free to tweak around.
 * Init git repo :+1:
 * First commit :+1:
 * Handle basic edge cases
-  * Prevent crash when no values are passed
+  * Prevent crash when no values are passed :+1:
   * Show usage help message
 * Publish package on npm
