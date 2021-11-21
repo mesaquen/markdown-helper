@@ -10,7 +10,17 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "keywords": ["markdown", "pandoc", "pdf", "odt"],
+  "keywords": [
+    "markdown",
+    "pandoc",
+    "pdf",
+    "odt"
+  ],
+  "files": [
+    "bin",
+    "scripts",
+    "template"
+  ],
   "author": "Mesaque Francisco",
   "license": "MIT",
   "devDependencies": {

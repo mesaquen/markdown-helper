@@ -58,6 +58,7 @@ if (files.length) {
 
   process.exit(1)
 }
+
 fs.copySync(templateDir, appName)
 fs.moveSync(path.join(appName, 'gitignore'), path.join(appName, '.gitignore'))
 
